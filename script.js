@@ -13,6 +13,8 @@ let x;
 let y;
 let isPressed = false;
 
+// Drawing from here
+
 const drawCircle = (x, y) => {
   ctx.beginPath();
   ctx.arc(x, y, size, 0, Math.PI * 2);
@@ -30,6 +32,8 @@ const drawLine = (x1, y1, x2, y2) => {
 };
 
 const updateSizeOnScreen = () => (sizeElement.innerText = size);
+
+// Canvas mouse handlers
 
 canvas.addEventListener("mousedown", (e) => {
   isPressed = true;
